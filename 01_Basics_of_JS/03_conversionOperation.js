@@ -51,14 +51,18 @@ undefined => false
 
 
 let someValue = 33
-console.log(typeof someValue);
+// console.log(typeof someValue);
 
 let stringNumber = String(someValue)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
 
 
 /*********************Operations*********************/
+
+let num = 25
+let negNum = -num
+// console.log(negNum);
 
 // console.log(2+2);        4
 // console.log(2-2);        0
@@ -66,3 +70,27 @@ console.log(typeof stringNumber);
 // console.log(2/2);        1
 // console.log(2**3);       8
 // console.log(2%2);        0
+
+
+let str1 = "hello"
+let str2 = " devansh"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// Bad practices of coding
+
+// console.log(1 + "2");       // 12
+// console.log("1" + 2);       // 12
+// console.log("1" + 2 + 3);   // 123
+// console.log(1 + 2 + "3");   // 33
+
+// console.log(+true);   // converts value of true to 1
+// console.log(+"");     // empty string gives false so it converts to 0
+
+// pre and post increment
+
+let counter = 100
+// ++counter        // 101
+counter++           // 101
+console.log(counter);
