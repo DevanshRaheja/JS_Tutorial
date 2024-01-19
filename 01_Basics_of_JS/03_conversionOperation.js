@@ -56,3 +56,13 @@ console.log(typeof someValue);
 let stringNumber = String(someValue)
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+
+/*********************Operations*********************/
+
+// console.log(2+2);        4
+// console.log(2-2);        0
+// console.log(2*2);        4
+// console.log(2/2);        1
+// console.log(2**3);       8
+// console.log(2%2);        0
