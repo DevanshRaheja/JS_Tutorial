@@ -30,13 +30,54 @@ let myObj = {
     email : "abc@xyz.com"
 }
 
-console.log(myObj);  
-console.log(typeof myObj);  // object
+// console.log(myObj);  
+// console.log(typeof myObj);  // object
 
 function myName() {
     console.log("Hello Devansh");
 }
 
-console.log(typeof myName); //Object function
+// console.log(typeof myName); //Object function
 
-myName()
+// myName()
+
+
+
+/***************Concept of Memory***************/
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myDetail = "devanshraheja"
+
+let anotherName = myDetail
+anotherName = "raheja"
+
+// console.table([myDetail, anotherName]);
+/*
+┌─────────┬─────────────────┐
+│ (index) │     Values      │
+├─────────┼─────────────────┤
+│    0    │ 'devanshraheja' │
+│    1    │ 'raheja'        │
+└─────────┴─────────────────┘
+*/
+
+// Heap memory (Reference to original object in the memory is given)
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+console.log(userOne);   //{ email: 'user@gmail.com', upi: 'user@ybl' }
+
+let userTwo = userOne
+userTwo.email = "user2@google.com"
+userTwo.upi = "user2@ybl"
+
+console.log(userTwo);
+console.log(userOne);
+
+/*
+userTwo => { email: 'user2@google.com', upi: 'user2@ybl' }
+userOne => { email: 'user2@google.com', upi: 'user2@ybl' }
+*/
+
