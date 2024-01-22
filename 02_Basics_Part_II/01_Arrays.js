@@ -24,6 +24,6 @@ const myArr = new Array(1,2,3,4)
 // myArr.push(10)
 // myArr.pop() // remove an element from last in array
 
-,ya
+
 
 console.log(myArr)
