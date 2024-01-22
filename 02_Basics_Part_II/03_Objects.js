@@ -56,3 +56,7 @@ jsUser.greetingTwo = function(){
 // console.log(jsUser.greeting);   // [Function (anonymous)]
 jsUser.greeting();   // Hello Everyone...
 jsUser.greetingTwo();   // Hello Devansh Raheja...
+
+/* If you use console.log() to print a function on console 
+then it will show an undefined along with the output 
+*/
