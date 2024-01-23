@@ -72,11 +72,44 @@ const userData = [
     }
 ]
 
-console.log(userData[2].email);
-console.log(newUser);
+// console.log(userData[2].email);
+// console.log(newUser);
 
-console.log(Object.keys(newUser));  // Creates an array of all the keys of an object
-console.log(Object.values(newUser));  // Creates an array of all the values of an object
-console.log(Object.entries(newUser));  // Creates an array of all the key-value pair of an object
+// console.log(Object.keys(newUser));  // Creates an array of all the keys of an object
+// console.log(Object.values(newUser));  // Creates an array of all the values of an object
+// console.log(Object.entries(newUser));  // Creates an array of all the key-value pair of an object
 
-console.log(newUser.hasOwnProperty('isLoggedIn')); // Check if an object has a property in it or not
+// console.log(newUser.hasOwnProperty('isLoggedIn')); // Check if an object has a property in it or not
+
+
+// De-structuring Of Objects
+
+const course = {
+    courseName: "MERN: Basics to Advance",
+    coursePrice: "999",
+    courseInstructor: "Harkirat Singh"
+}
+
+// console.log(course.courseInstructor);
+// console.log(course["courseInstructor"]);
+
+const {courseInstructor: Instructor} = course 
+// const {which property : what name} = from which object
+// console.log(Instructor);
+
+// When working with API
+
+// JSON format: JavaScript Object Notation
+// as objects
+// {
+//     "name": "Harkirat",
+//     "course": "MERN",
+//     "price": "8000"
+// }
+
+// as arrays
+// [
+//     {},
+//     {},
+//     {}
+// ]
