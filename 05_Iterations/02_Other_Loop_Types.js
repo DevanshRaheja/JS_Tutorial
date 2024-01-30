@@ -42,14 +42,14 @@ Key Types :
 -> The keys of an Object must be either a String or a Symbol.
 */
 
-const map = new Map()
+// const map = new Map()
 
-map.set('IN', 'INDIA');
-map.set('CA', 'CANADA');
-map.set('USA', 'UNITED STATES OF AMERICA');
+// map.set('IN', 'INDIA');
+// map.set('CA', 'CANADA');
+// map.set('USA', 'UNITED STATES OF AMERICA');
 
-console.log(map.get('IN'));
-console.log(map);
+// console.log(map.get('IN'));
+// console.log(map);
 
 /*
 Output:
@@ -60,9 +60,9 @@ Map(3) {
 }
 */
 
-for (const key of map) {
-    console.log(key);
-}
+// for (const key of map) {
+//     console.log(key);
+// }
 
 /*
 [ 'IN', 'INDIA' ]
@@ -70,6 +70,17 @@ for (const key of map) {
 [ 'USA', 'UNITED STATES OF AMERICA' ]
 */
 
-for (const [key, value] of map) {
-  console.log(key, ' : ', value);
+// for (const [key, value] of map) {
+//   console.log(key, ' : ', value);
+// }
+
+const myObject = {
+  'Game1' : 'GTA VI',
+  'Game2' : 'Witcher III'
 }
+
+// for (const [key, value] of myObject) {
+//   console.log(`${key} => ${value}`);
+// }
+
+// Generates error :TypeError: myObject is not iterable 
